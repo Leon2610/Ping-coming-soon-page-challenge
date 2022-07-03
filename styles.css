@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 768px;
+}
+
+main .logo {
+  margin-top: 85px;
+  margin-bottom: 45px;
+}
+
+main .dashboard-image img {
+  width: 100%;
+}
+
+main .text-container {
+  text-align: center;
+}
+
+main .text-container h1 {
+  font-size: 3.06rem;
+  font-weight: 300;
+  color: var(--Gray);
+  margin-bottom: 1rem;
+}
+
+main .text-container h1 span {
+  color: var(--VeryDarkBlue);
+  font-weight: 700;
+}
+
+main .text-container p {
+  color: var(--VeryDarkBlue);
+  font-weight: 600;
+}
+
+main .input-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  width: 83%;
+}
+
+main .input-container input {
+  padding: 1.2rem;
+  border: none;
+  border: 1px solid #e4e8ff;
+  border-radius: 50px;
+  width: 72%;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+main .input-container input.error {
+  border: 1px solid var(--LightRed);
+}
+
+main .input-container input.success {
+  border: 1px solid green;
+}
+
+main .input-container input::placeholder {
+  color: #e4e8ff;
+  font-size: 1rem;
+}
+
+main .msg {
+  margin-top: 15px;
+}
+
+main .input-container button {
+  border: none;
+  padding: 1.2rem;
+  background-color: var(--Blue);
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 34%;
+  font-size: 1rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+}
+
+main .input-container button:hover {
+  background-color: hsl(223, 62%, 53%);
+}
+
+main .dashboard-image {
+  margin-top: 5.2rem;
+  width: 83%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3.5rem;
+}
+
+footer .social {
+  display: flex;
+  gap: 0.9rem;
+}
+
+footer .social > button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e4e8ff;
+  background-color: white;
+  color: var(--Blue);
+  font-size: 1rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+footer .social > button:hover {
+  background-color: var(--Blue);
+  color: white;
+}
+
+footer p:first-of-type {
+  font-size: 12px;
+  color: var(--Gray);
+}
+
+@media (max-width: 800px) {
+  main .input-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  main .input-container input {
+    width: 100%;
+  }
+
+  main .input-container button {
+    width: 100%;
+  }
+}
