@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:
-- Live Site URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/ping-coming-soon-page-html-css-flexbox-javascript-RAejnYkRvJ
+- Live Site URL: https://leon2610.github.io/Ping-coming-soon-page-challenge/
 
 ## My process
 
